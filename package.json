@@ -4,13 +4,19 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node -- src/index.js"
+    "dev": "nodemon --exec babel-node -- --extensions '.ts,.tsx' src/index.ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-transform-typescript": "^7.3.2",
     "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.3.3",
     "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
